@@ -1,12 +1,7 @@
+require 'sinatra'
+require 'sinatra/activerecord'
+require './config/environments'
 
-post '/post' do
-	#create a post
-end
-
-put '/post/:id' do
-	#update a post
-end
-
-delete '/post/:id' do
-	#delete a post
+get '/' do
+	"Hello, World!"
 end
