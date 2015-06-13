@@ -1,2 +1,2 @@
 gem 'sinatra'
-gem 'rack'
+source 'https://rubygems.org'
