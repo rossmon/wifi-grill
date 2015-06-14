@@ -11,13 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150614011904) do
+ActiveRecord::Schema.define(version: 20150614234939) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "models", force: :cascade do |t|
-    t.string "name"
+  create_table "temps", force: :cascade do |t|
+    t.string   "device_id"
+    t.integer  "probe_num"
+    t.integer  "temperature"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
 end

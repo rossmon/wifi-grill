@@ -1,4 +1,5 @@
-class CreateTemps < ActiveRecord::Migration
+class CreateTemp < ActiveRecord::Migration
+
  def up
   create_table :temps do |t|
    t.string :device_id
@@ -13,7 +14,5 @@ class CreateTemps < ActiveRecord::Migration
   drop_table :temps
  end
 
-
-#  def change
-#  end
+ 
 end
