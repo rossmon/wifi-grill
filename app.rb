@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require './config/environments'
-require './temps/temp
+require './temps/temp'
 #models/model'
 
 get '/' do
