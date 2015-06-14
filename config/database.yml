@@ -2,4 +2,5 @@ development:
  adapter: postgresql
  database: development
  username: Ross
+ password: rachelea
  host: localhost

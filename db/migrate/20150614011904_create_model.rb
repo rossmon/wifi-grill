@@ -9,6 +9,7 @@ class CreateModel < ActiveRecord::Migration
   drop_table :models
  end
 
- # def change
- # end
+
+#  def change
+#  end
 end
