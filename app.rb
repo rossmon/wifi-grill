@@ -1,22 +1,23 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require './config/environments'
-require './models/model'
+require './temps/temp
+#models/model'
 
 get '/' do
 	erb :index
 end
  
 post '/submit' do
-	@model = Model.new(params[:model])
-	if @model.save
-		redirect '/models'
+	@temp = Temp.new(params[:temp])
+	if @temp.save
+		redirect '/temps'
 	else
 		"Sorry, there was an error!"
 	end
 end
 
-get '/models' do
-	@models = Model.all
-	erb :models
+get '/temps' do
+	@temps = Temp.all
+	erb :temps
 end

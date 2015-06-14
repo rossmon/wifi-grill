@@ -1,0 +1,26 @@
+<h3>All Temperature Readings</h3>
+<table style="width:100%">
+ <tr>
+  <th>Device ID</th>
+  <th>Probe Number</thr>?
+  <th>Temperature</th>
+  <th>Time</th>
+ </tr>
+
+ <% @temps.each do |temp| %>
+        <td>
+                <%= temp.device_id %>
+        </td>
+        <td>
+                <%= temp.probe_num %>
+        </td>
+        <td>
+                <%= temp.temperature %>
+        </td>
+        <td>
+                <%= temp.created_at %>
+        </td>
+ <% end %>
+</table>
+<a href="/">Back to Home</a>
+~                            
