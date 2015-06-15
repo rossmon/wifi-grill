@@ -1,5 +1,5 @@
 <style>
-th {
+th, td {
  text-align: center;
 }
 </style>
@@ -14,6 +14,7 @@ th {
  </tr>
 
  <% @temps.each do |temp| %>
+     <tr>   
         <td>
                 <%= temp.device_id %>
         </td>
@@ -26,6 +27,7 @@ th {
         <td>
                 <%= temp.created_at %>
         </td>
+     </tr>
  <% end %>
 </table>
 <a href="/">Back to Home</a>
