@@ -8,14 +8,6 @@ get '/' do
 	erb :index
 end
  
-post '/' do
-       @temp = Temp.new(params[:temp])
-        if @temp.save
-                redirect '/temps'
-        else
-                "Sorry, there was an error!"
-        end
-end
 post '/submit' do
 	@temp = Temp.new(params[:temp])
 	if @temp.save
