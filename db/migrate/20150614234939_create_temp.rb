@@ -4,7 +4,7 @@ class CreateTemp < ActiveRecord::Migration
   create_table :temps do |t|
    t.string :device_id
    t.integer :probe_num
-   t.integer :temperature
+   t.float :temperature
 
    t.timestamps null: false
   end
