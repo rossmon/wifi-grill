@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20150614234939) do
   create_table "temps", force: :cascade do |t|
     t.string   "device_id"
     t.integer  "probe_num"
-    t.integer  "temperature"
+    t.float  "temperature"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
