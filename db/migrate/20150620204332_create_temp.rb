@@ -14,5 +14,5 @@ class CreateTemp < ActiveRecord::Migration
   drop_table :temps
  end
 
- 
+
 end
