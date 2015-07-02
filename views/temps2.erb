@@ -1,20 +1,6 @@
-<style>
-th, td {
- text-align: center;
-}
-</style>
-
-<h3>All Temperature Readings</h3>
 <table style="width:100%">
- <tr>
-  <th>Device ID</th>
-  <th>Probe Number</thr>?
-  <th>Temperature</th>
-  <th>Time</th>
- </tr>
-
  <% @temps.each do |temp| %>
-     <tr>   
+     <tr>
         <td>
                 <%= temp.device_id %>
         </td>
@@ -30,4 +16,3 @@ th, td {
      </tr>
  <% end %>
 </table>
-<a href="/">Back to Home</a>
