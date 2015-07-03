@@ -23,6 +23,6 @@ get '/temps' do
 end
 
 get '/temps2' do
-        @temp = Temp.where("device_id = ?", params[:temp])
+        @temp = Temp.where("device_id = ?", params[:device_id])
         erb :temps2
 end
