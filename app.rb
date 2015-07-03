@@ -24,5 +24,5 @@ end
 
 get '/temps2' do
         @temps = Temp.where("device_id = ?", params[:device_id])
-        erb :temps
+        erb :temps2
 end
